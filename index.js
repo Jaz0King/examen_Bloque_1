@@ -9,13 +9,14 @@ function  bootcampData (data) {
     console.log(data)
     for (const compis of data.examen) {
         console.log(compis)
+
+        let pintarCompis = document.getElementById("BootcampMembers")
+         pintarCompis.innerHTML += `<h2>${compis.nombre} ${compis.apellido}</h2>`
+         + `<h1>${compis.cumpleaños}</h1>`
     }
 }
 
-let compis = " "
 
-let pintarCompis = document.getElementById("bootcampMembers");
-pintarCompis.innerHTML += data.nombre.apellido;
 
 
     
